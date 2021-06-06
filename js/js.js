@@ -1,9 +1,11 @@
-let c = 4
-function addX(x) {
-  return function(n) {
-     return n + x
-  }
+'use strict';
+
+let arr = [1, 2, 3, 4, 5];
+
+arr.pop();
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]); 
 }
-const addThree = addX(3)
-let d = addThree(c)
-console.log('example partial application', d)
+
+console.log(arr);
